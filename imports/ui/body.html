@@ -1,0 +1,29 @@
+<body>
+<header>
+    <h1>HS MIS</h1>
+</header>
+<main>
+    {{> test}}
+    {{> insertPupil}}
+    {{#each pupil}}
+        {{firstName}}
+        {{lastName}}
+        {{DoB}}
+    {{/each}}
+</main>
+</body>
+<template name="test">
+    <h2>Management System</h2>
+</template>
+
+<template name="insertPupil">
+    {{#autoForm collection="pupilDetails" id="insertPupilForm" type="insert"}}
+        <fieldset>
+            <legend>Add a new Pupil</legend>
+            {{> afQuickField name='firstName'}}
+            {{> afQuickField name='lastName'}}
+            {{> afQuickField name='DoB'}}
+            </fieldset>
+        <button type="submit" class="btn btn-primary">Insert</button>
+    {{/autoForm}}
+</template>

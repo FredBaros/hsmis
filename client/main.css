@@ -1,0 +1,11 @@
+/* CSS declarations go here */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Roboto');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Comfortaa', cursive;
+}
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #f0ebf3;
+}
